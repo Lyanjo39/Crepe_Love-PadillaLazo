@@ -736,21 +736,21 @@ body {
 .formulario {
   width: 100%;
   min-height: 90vh;
-  background-image: url(/imagenes/crepes02.jpg);
+  background-image: url(/imagenes/crepebanner.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   margin: auto;
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 .form {
   width: 380px;
   height: 500px;
-  background: #0a0a0ac7;
+  background: #0a0a0a;
   border-radius: 8px;
-  -webkit-box-shadow: 0 0 40px -10px #f3d00b;
-          box-shadow: 0 0 40px -10px #f3d00b;
+  -webkit-box-shadow: 0 0 40px -10px #fdd701;
+          box-shadow: 0 0 40px -10px #fdd701;
   margin: 20px auto;
   padding: 20px 30px;
   max-width: calc(100vw - 40px);
@@ -759,7 +759,7 @@ body {
   font-family: "Montserrat Alternates", sans-serif;
   position: relative;
   top: 25px;
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 form h2 {
