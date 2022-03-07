@@ -260,7 +260,7 @@ footer{
 /* acá iniian los estilos de la sesion de Historia */
 
 .jumbotron{
-  background-image: url(/imagenes/cerezascrep.jpg);
+ background-image: url(../imagenes/cerezascrep.jpg);
   background-size: cover;
   background-position: center;
   height: $alto3+100;
@@ -616,7 +616,7 @@ body{
 .formulario{
     width: 100%;
     min-height: 90vh;
-    background-image: url(/imagenes/crepebanner.jpg);
+    background-image: url(../imagenes/crepebanner.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -628,7 +628,6 @@ body{
     width:380px;
     height:500px;
     background:#0a0a0a;
-    // background-image: url(/imagenes/cerezascrep.jpg);
     border-radius:8px;
     box-shadow:0 0 40px -10px #fdd701;
     margin:20px auto;
