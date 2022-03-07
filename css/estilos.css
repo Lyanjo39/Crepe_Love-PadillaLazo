@@ -1,0 +1,1045 @@
+@charset "UTF-8";
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.header-index {
+  width: 100%;
+  height: 100vh;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(5, 7, 12, 0.75)), to(rgba(5, 7, 12, 0.75))), url(../imagenes/crepe1.jpg);
+  background-image: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../imagenes/crepe1.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+/* AQUI INICIA LA SESION DE NAVEGACIÓN */
+nav {
+  height: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Mochiy Pop P One", sans-serif;
+  text-shadow: 1px 1px 2px #daa520;
+  margin-bottom: 40px;
+}
+
+#logo {
+  width: 120px;
+  margin-top: 50px;
+  margin-left: 50px;
+  border-radius: 10px;
+  border: solid 2px #acaba9;
+}
+
+.bar-btn {
+  font-size: 35px;
+  color: #acaba9;
+  margin-right: 30px;
+  padding-top: 50px;
+}
+
+.nav-menu {
+  position: fixed;
+  width: 100%;
+  height: 0vh;
+  top: 130px;
+  background-color: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+  z-index: 100;
+}
+
+.nav-menu li {
+  display: none;
+  line-height: 30px;
+  margin: 50px 0px;
+  -webkit-transition: all .5s;
+  transition: all .5s;
+}
+
+.nav-menu li a {
+  color: #acaba9;
+  font-weight: 600;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.nav-menu li a.active, .nav-menu li a:hover {
+  color: #daa520;
+  -webkit-transition: .3s;
+  transition: .3s;
+}
+
+#check {
+  display: none;
+}
+
+#check:checked ~ .nav-menu {
+  height: 100vh;
+}
+
+#check:checked ~ .nav-menu li {
+  display: block;
+}
+
+.texto-banner {
+  padding: 30px;
+  margin-top: 150px;
+  text-align: center;
+}
+
+.texto-banner h1 {
+  color: black;
+  font-size: 6vw;
+  font-family: "Mochiy Pop P One", sans-serif;
+  text-shadow: -2px -2px 1px #8d8989;
+  display: inline-block;
+  margin: 0 0.5rem;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation: fadeInUp;
+          animation: fadeInUp;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+}
+
+.texto-banner h1 span {
+  color: #daa520;
+  margin-left: 20px;
+  -webkit-text-stroke: 1px #0a0a0a;
+}
+
+#btn-instagram, #btn-facebook, #btn-whatsapp, #btn-youtube {
+  font-size: 30px;
+  color: #c5c0c0;
+  text-decoration: none;
+  margin: 10px;
+  text-shadow: 1px 1px 2px #daa520;
+}
+
+#btn-instagram:hover,
+#btn-facebook:hover,
+#btn-whatsapp:hover,
+#btn-youtube:hover {
+  color: #daa520;
+}
+
+.redes-sociales {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: fixed;
+  top: 200px;
+  right: 10px;
+  z-index: 100;
+  border-radius: 8px;
+}
+
+.cont-frase {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 200px;
+  background-color: #000000;
+  border-top: solid #414141 1px;
+  border-bottom: solid #414141 1px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cont-frase h2 {
+  background-color: black;
+  color: #daa520;
+  padding: 40px;
+  font-size: 40px;
+  font-family: "Mochiy Pop P One", sans-serif;
+  text-align: center;
+  text-shadow: -2px -2px 1px #000000;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation: wobble;
+          animation: wobble;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+}
+
+.container-info {
+  width: 100%;
+  height: auto;
+  background-color: #000000;
+  text-align: center;
+  margin: auto;
+}
+
+.container-info h3 {
+  font-size: 35px;
+  font-family: "Mochiy Pop P One", sans-serif;
+  color: #daa520;
+  text-align: center;
+  padding: 50px 0px;
+}
+
+.container-info h3 p {
+  margin: auto;
+  text-align: justify;
+  font-size: 12px;
+  color: #acaba9;
+  font-family: "Mochiy Pop P One", sans-serif;
+  width: 80%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.container-info a {
+  display: inline-block;
+  width: 100%;
+  height: auto;
+  font-size: 20px;
+  color: #daa520;
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+#deleite {
+  text-align: center;
+  background-color: #000000;
+  text-transform: capitalize;
+  padding: 10px;
+  margin-bottom: 40px;
+  color: #daa520;
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+
+.product-row {
+  padding: 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  gap: 5%;
+}
+
+.card {
+  -webkit-box-shadow: #daa520 0px 0px 15px 5px;
+          box-shadow: #daa520 0px 0px 15px 5px;
+  margin-bottom: 50px;
+  background-color: #474747;
+  border-radius: 20px;
+  opacity: 0.5;
+}
+
+.card:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+  opacity: 0.9;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 20px 20px 0px 0px;
+  height: 180px;
+}
+
+.btn-success {
+  background-color: #616161;
+  border: 1px solid #0f0f0f;
+}
+
+.btn-success:hover {
+  background-color: #020202;
+  border: 1px solid #6d6c6c;
+}
+
+.card-title {
+  color: #daa520;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  color: #ffffff;
+  background-color: #313131;
+  padding: 20px;
+  text-align: center;
+}
+
+/* acá iniian los estilos de la sesion de Historia */
+.jumbotron {
+  background-image: url(/imagenes/cerezascrep.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 600px;
+  text-shadow: 10px 10px 20px 20px #000000;
+  border-radius: 0px;
+  margin-bottom: 0px;
+  opacity: 0.8;
+}
+
+.h5 {
+  font-size: 60px;
+  -webkit-text-stroke: 2px #000000;
+  color: #fd0606;
+  padding-left: 30px;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation: fadeInUp;
+          animation: fadeInUp;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+}
+
+.jumbo-p {
+  font-size: 30px;
+  -webkit-text-stroke: 0.5px #000000;
+  color: #ff0000;
+  padding-left: 30px;
+  -webkit-animation-name: aparecer;
+          animation-name: aparecer;
+  -webkit-animation: fadeInUp;
+          animation: fadeInUp;
+  -webkit-animation-duration: 5s;
+          animation-duration: 5s;
+  -webkit-animation-iteration-count: 3;
+          animation-iteration-count: 3;
+}
+
+.historia {
+  height: 500px;
+  width: 100%;
+  background-color: #2c2b2b;
+  background-image: url(/imagenes/layered-waves-haikei.svg), url(/imagenes/cerezascrep.jpg);
+  background-size: cover;
+  background-position: center;
+}
+
+.ses-historia {
+  text-align-last: center;
+  width: 100%;
+  height: auto;
+  background-color: #0a0a0a4d;
+}
+
+.ses-historia article {
+  display: inline-block;
+  text-align: justify;
+  padding: 30px;
+}
+
+.ses-historia article h2 {
+  font-size: 20px;
+  color: #daa520;
+  padding-bottom: 30px;
+  font-family: "Mochiy Pop P One", sans-serif;
+  display: inline-block;
+}
+
+.ses-historia article p {
+  font-size: 16px;
+  color: #acaba9;
+  width: 90%;
+  text-align: justify;
+  margin: auto;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.ses-historia iframe {
+  max-width: 100%;
+}
+
+/* Desde aquí inician los estilos a la sesion de Productos */
+#h2-prod {
+  color: #daa520;
+  background-color: #0a0a0a;
+  font-size: 20px;
+  font-family: "Mochiy Pop P One", sans-serif;
+  padding: 20px 0px;
+  text-align: center;
+  text-shadow: -2px -2px 1px #000000;
+}
+
+.sec-prod {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #0a0a0a;
+  width: 100%;
+  padding-top: 20px;
+  opacity: 0.8;
+}
+
+.article-1,
+.article-2,
+.article-3,
+.article-4,
+.article-5,
+.article-6 {
+  opacity: 0.7;
+  -webkit-animation-name: efecto;
+          animation-name: efecto;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-iteration-count: 2;
+          animation-iteration-count: 2;
+}
+
+@-webkit-keyframes efecto {
+  0% {
+    background-color: #262627;
+  }
+  50% {
+    width: 300px;
+  }
+  100% {
+    background-color: black;
+  }
+}
+
+@keyframes efecto {
+  0% {
+    background-color: #262627;
+  }
+  50% {
+    width: 300px;
+  }
+  100% {
+    background-color: black;
+  }
+}
+
+.article-1:hover,
+.article-2:hover,
+.article-3:hover,
+.article-4:hover,
+.article-5:hover,
+.article-6:hover {
+  opacity: 1;
+  -webkit-box-shadow: -1px 1px 15px 2px #daa520;
+          box-shadow: -1px 1px 15px 2px #daa520;
+  -webkit-transition-duration: 0.2s;
+          transition-duration: 0.2s;
+}
+
+.sec-prod article {
+  width: 330px;
+  height: auto;
+  margin: 5px;
+  border-radius: 20px;
+  background-color: #000000;
+  margin-left: 40px;
+  margin-bottom: 40px;
+  -webkit-box-shadow: -1px 1px 15px 2px #525251;
+          box-shadow: -1px 1px 15px 2px #525251;
+  text-align: center;
+}
+
+.sec-prod article img {
+  width: 100%;
+  margin: auto;
+  border-radius: 20px 20px 0px 0px;
+  border: 2px solid #daa520;
+}
+
+.sec-prod h3 {
+  color: #daa520;
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 10px;
+  font-family: "Mochiy Pop P One", sans-serif;
+}
+
+.sec-prod p {
+  color: #acaba9;
+  font-size: 16px;
+  font-family: "Montserrat Alternates", sans-serif;
+  padding: 20px;
+  text-align: justify;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* aca inicia la sesion de Servicios */
+.carousel-item {
+  width: 100%;
+  text-align: center;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  opacity: 0.5;
+  -webkit-transition: all 3s;
+  transition: all 3s;
+}
+
+a:-webkit-any-link {
+  text-decoration: none;
+}
+
+main {
+  background-color: #0a0a0a;
+}
+
+.sec-services {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #0a0a0a;
+  color: #acaba9;
+  width: 70%;
+  opacity: 0.7;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#h2-servicio {
+  color: #daa520;
+  background-color: #0a0a0a;
+  font-size: 20px;
+  font-family: "Mochiy Pop P One", sans-serif;
+  text-align: center;
+  text-shadow: -2px -2px 1px #000000;
+}
+
+#articulo-1 {
+  width: 330px;
+  height: auto;
+  border-radius: 20px;
+  font-size: 20px;
+  font-family: "Mochiy Pop P One", sans-serif;
+  -webkit-box-shadow: -1px 1px 15px 2px #ffe600;
+          box-shadow: -1px 1px 15px 2px #ffe600;
+  opacity: 0.7;
+}
+
+#articulo-1:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#articulo-1 h3 {
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 10px;
+  font-family: "Mochiy Pop P One", sans-serif;
+  padding-top: 10px;
+  color: #ffe600;
+}
+
+#articulo-1 img {
+  width: 250px;
+  margin: 10px;
+  border-radius: 30px;
+  -webkit-box-shadow: -1px 1px 15px 2px #ffe600;
+          box-shadow: -1px 1px 15px 2px #ffe600;
+  margin-bottom: 20px;
+}
+
+#articulo-1 p,
+#articulo-2 p,
+#articulo-3 p,
+#articulo-4 p {
+  color: #acaba9;
+  padding: 0px 20px 20px;
+  font-size: 16px;
+  font-family: "Montserrat Alternates", sans-serif;
+  text-align: justify;
+}
+
+#articulo-1 p,
+#articulo-2 p,
+#articulo-3 p,
+#articulo-4 p:hover {
+  color: #ffffff;
+  opacity: 0.9;
+}
+
+#articulo-2 {
+  width: 330px;
+  height: auto;
+  border-radius: 20px;
+  background-color: #000000;
+  margin-bottom: 40px;
+  -webkit-box-shadow: -1px 1px 15px 2px #48f802;
+          box-shadow: -1px 1px 15px 2px #48f802;
+  text-align: center;
+  opacity: 0.7;
+}
+
+#articulo-2:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#articulo-2 h3 {
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 10px;
+  font-family: "Mochiy Pop P One", sans-serif;
+  padding-top: 10px;
+  color: #48f802;
+}
+
+#articulo-2 img {
+  width: 250px;
+  margin: 20px;
+  border-radius: 30px;
+  -webkit-box-shadow: -1px 1px 15px 2px #48f802;
+          box-shadow: -1px 1px 15px 2px #48f802;
+  background-color: #88d688d8;
+}
+
+#articulo-3 {
+  width: 330px;
+  height: auto;
+  border-radius: 20px;
+  background-color: #000000;
+  margin-bottom: 40px;
+  -webkit-box-shadow: -1px 1px 15px 2px #00fff2;
+          box-shadow: -1px 1px 15px 2px #00fff2;
+  text-align: center;
+  opacity: 0.7;
+}
+
+#articulo-3:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#articulo-3 h3 {
+  font-family: "Mochiy Pop P One", sans-serif;
+  padding-top: 10px;
+  color: #00fff2;
+  font-size: 22px;
+}
+
+#articulo-3 img {
+  width: 250px;
+  margin: 15px;
+  border-radius: 20px;
+  -webkit-box-shadow: -1px 1px 15px 2px #00fff2;
+          box-shadow: -1px 1px 15px 2px #00fff2;
+  margin-bottom: 20px;
+}
+
+#articulo-4 {
+  width: 330px;
+  height: auto;
+  border-radius: 20px;
+  background-color: #000000;
+  margin-bottom: 40px;
+  -webkit-box-shadow: -1px 1px 15px 2px #ff0800;
+          box-shadow: -1px 1px 15px 2px #ff0800;
+  text-align: center;
+  opacity: 0.7;
+}
+
+#articulo-4:hover {
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05);
+}
+
+#articulo-4 h3 {
+  text-align: center;
+  font-size: 20px;
+  padding-bottom: 10px;
+  font-family: "Mochiy Pop P One", sans-serif;
+  padding-top: 10px;
+  color: #ff0800;
+}
+
+#articulo-4 img {
+  width: 250px;
+  margin: 30px;
+  border-radius: 20px;
+  -webkit-box-shadow: -1px 1px 15px 2px #ff0800;
+          box-shadow: -1px 1px 15px 2px #ff0800;
+}
+
+#articulo-1:hover,
+#articulo-2:hover,
+#articulo-3:hover,
+#articulo-4:hover {
+  background-color: #000000;
+  opacity: 1;
+}
+
+.sec-services article {
+  width: 70%;
+  height: auto;
+  margin-top: 50px;
+  border-radius: 20px;
+  background-color: #000000;
+  margin-bottom: 40px;
+  -webkit-box-shadow: -1px 1px 15px 2px #525251;
+          box-shadow: -1px 1px 15px 2px #525251;
+  text-align: center;
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* inicio de la sesion de contactos */
+body {
+  background: #0e0e0e;
+  margin: 0;
+}
+
+.formulario {
+  width: 100%;
+  min-height: 90vh;
+  background-image: url(/imagenes/crepes02.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin: auto;
+  opacity: 0.7;
+}
+
+.form {
+  width: 380px;
+  height: 500px;
+  background: #0a0a0ac7;
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 40px -10px #f3d00b;
+          box-shadow: 0 0 40px -10px #f3d00b;
+  margin: 20px auto;
+  padding: 20px 30px;
+  max-width: calc(100vw - 40px);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: "Montserrat Alternates", sans-serif;
+  position: relative;
+  top: 25px;
+  opacity: 0.8;
+}
+
+form h2 {
+  margin: 10px 0;
+  padding-bottom: 10px;
+  width: 100%;
+  color: #daa520;
+  border-bottom: 3px solid #78788c;
+}
+
+input {
+  color: #ecebeb;
+  font-size: 18px;
+  font-weight: 400;
+  width: 100%;
+  padding: 10px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: none;
+  outline: none;
+  resize: none;
+  border: 0;
+  font-family: "Montserrat Alternates", sans-serif;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  border-bottom: 2px solid #bebed2;
+}
+
+input:focus {
+  border-bottom: 2px solid #a2c214;
+}
+
+.p-contacto:before {
+  content: attr(type);
+  display: block;
+  margin: 28px 0 0;
+  font-size: 20px;
+  color: #daa520;
+  font-weight: bold;
+}
+
+button {
+  float: right;
+  padding: 8px 12px;
+  margin: 8px 0px 0px;
+  font-family: "Montserrat Alternates", sans-serif;
+  border: 2px solid #78788c;
+  background: 0;
+  color: #262627;
+  cursor: pointer;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+  color: #ffffff;
+  border-radius: 10px;
+}
+
+button:hover {
+  background: #000000;
+  color: #ffffff;
+}
+
+/* ACA INICIAN LOS MEDIA QUERY */
+@media screen and (min-width: 1024px) {
+  #logo {
+    margin-left: 50px;
+  }
+  nav {
+    height: 100px;
+  }
+  .bar-btn {
+    display: none;
+  }
+  .nav-menu {
+    position: relative;
+    height: 50px;
+    top: 0;
+    background: none;
+    -webkit-transition: none;
+    transition: none;
+    text-align: right;
+    margin-right: 50px;
+  }
+  .nav-menu li {
+    display: inline-block;
+    line-height: 100px;
+    margin: 0px 20px;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .nav-menu li a {
+    font-size: 16px;
+  }
+  .texto-banner h1 {
+    font-size: 70px;
+    margin-bottom: 30px;
+  }
+  .cont-frase h2, h2 {
+    font-size: 40px;
+    font-family: "Mochiy Pop P One", sans-serif;
+    color: #daa520;
+    text-align: center;
+    padding: 40px 0px;
+  }
+  .container-info p {
+    margin: auto;
+    text-align: justify;
+    font-size: 20px;
+    color: #acaba9;
+    font-family: "Montserrat Alternates", sans-serif;
+    width: 80%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  #h2-servicio {
+    font-size: 55px;
+    color: #daa520;
+  }
+}
+
+/* medias queries tablet vertical */
+@media screen and (min-width: 768px) {
+  .cont-frase h2, h2 {
+    font-size: 40px;
+    font-family: "Mochiy Pop P One", sans-serif;
+    color: #daa520;
+    text-align: center;
+    padding: 40px 0px;
+  }
+  .container-info h3 {
+    font-size: 40px;
+  }
+  .container-info p {
+    margin: auto;
+    text-align: justify;
+    font-size: 20px;
+    color: #acaba9;
+    font-family: "Montserrat Alternates", sans-serif;
+    width: 80%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .ses-historia article h2 {
+    font-size: 40px;
+    color: #daa520;
+    padding-bottom: 30px;
+    font-family: "Mochiy Pop P One", sans-serif;
+    display: inline-block;
+  }
+  .ses-historia article p {
+    font-size: 18px;
+  }
+  #h2-prod {
+    font-size: 35px;
+  }
+  #h2-servicio {
+    font-size: 30px;
+    color: #daa520;
+  }
+}
+
+/* medias queries celular horizontal*/
+@media screen and (max-width: 630px) {
+  .texto-banner {
+    padding: 30px;
+    margin-top: 150px;
+    text-align: center;
+  }
+  .texto-banner h1 {
+    font-size: 10vw;
+  }
+  .texto-banner h1 span {
+    color: #daa520;
+    margin-left: 20px;
+    font-size: 10vw;
+    -webkit-text-stroke: 1px #0a0a0a;
+  }
+  .cont-frase h2, h2 {
+    font-size: 30px;
+    font-family: "Mochiy Pop P One", sans-serif;
+    color: #daa520;
+    text-align: center;
+    padding: 40px 0px;
+  }
+  .container-info h3 {
+    font-size: 30px;
+  }
+  .container-info p {
+    margin: auto;
+    text-align: justify;
+    font-size: 14px;
+    color: #acaba9;
+    font-family: "Montserrat Alternates", sans-serif;
+    width: 80%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .ses-historia article h2 {
+    font-size: 20px;
+    color: #daa520;
+    padding-bottom: 30px;
+    font-family: "Mochiy Pop P One", sans-serif;
+    display: inline-block;
+  }
+  .sec-prod {
+    width: 90%;
+  }
+  #h2-servicio {
+    font-size: 25px;
+    color: #daa520;
+  }
+  #articulo-1 h3,
+  #articulo-3 h3 {
+    text-align: center;
+    font-size: 12px;
+    margin: auto;
+  }
+  #articulo-1 p,
+  #articulo-3 p {
+    display: none;
+  }
+  #articulo-1 img {
+    margin-bottom: 20px;
+    width: 80%;
+  }
+  #articulo-3 img {
+    width: 80%;
+  }
+  #articulo-2 h3,
+  #articulo-4 h3 {
+    text-align: center;
+    font-size: 12px;
+    margin: auto;
+  }
+  #articulo-2 p,
+  #articulo-4 p {
+    display: none;
+  }
+  #articulo-2 img,
+  #articulo-4 img {
+    margin-bottom: 20px;
+    margin: auto;
+    margin-bottom: 20px;
+    width: 80%;
+  }
+}
+
+/* medias queries celular vertical*/
+@media screen and (max-width: 320px) {
+  .cont-frase h2, .ses-historia h2 {
+    font-size: 20px;
+    font-family: "Mochiy Pop P One", sans-serif;
+    color: #daa520;
+    text-align: center;
+    padding: 40px 0px;
+  }
+  .container-info h3 {
+    font-size: 20px;
+  }
+  .container-info p {
+    margin: auto;
+    text-align: justify;
+    font-size: 14px;
+    color: #acaba9;
+    font-family: "Montserrat Alternates", sans-serif;
+    width: 80%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .ses-historia article h2 {
+    font-size: 15px;
+    color: #daa520;
+    padding-bottom: 30px;
+    font-family: "Mochiy Pop P One", sans-serif;
+    display: inline-block;
+  }
+  .ses-historia article p {
+    font-size: 14px;
+  }
+  .article-1 {
+    width: 50%;
+  }
+}
+/*# sourceMappingURL=estilos.css.map */
