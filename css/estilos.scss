@@ -1,7 +1,17 @@
+// tipografia
 $colorprincipal:#daa520;
 $colorsecundario: #acaba9;
 $fuenteTitulos:'Mochiy Pop P One', sans-serif;
 $fuenteparrafos: 'Montserrat Alternates', sans-serif;
+
+// tamaños
+$alto1:100vh;
+$alto2:100%;
+$alto3:300px;
+$ancho3:100px;
+$ancho1:100%;
+$ancho2:100vw;
+
 
 * {
     padding: 0px;
@@ -9,8 +19,8 @@ $fuenteparrafos: 'Montserrat Alternates', sans-serif;
     box-sizing: border-box;
 }
 .header-index{
-    width: 100%;
-    height: 100vh;
+    width: $ancho1;
+    height: $alto1;
     background-image: linear-gradient(rgba(5,7,12, 0.75), rgba(5,7,12,0.75)), url(../imagenes/crepe1.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -31,7 +41,7 @@ nav{
     margin-bottom: 40px;
 }
 #logo{
-    width: 120px;
+    width: $ancho3+20;
     margin-top:  50px;
     margin-left: 50px;
     border-radius: 10px ;
@@ -253,8 +263,8 @@ footer{
   background-image: url(/imagenes/cerezascrep.jpg);
   background-size: cover;
   background-position: center;
-  height: 600px;
-  text-shadow: 10px 10px 20px 20px #000000;
+  height: $alto3+100;
+  text-shadow: 10px 10px 20px 20px #d60101;
   border-radius: 0px;
   margin-bottom: 0px;
   opacity: 0.8;
@@ -309,7 +319,7 @@ footer{
 .ses-historia article p{
     font-size:16px;
     color: $colorsecundario;
-    width: 90%;
+    width: $ancho1 - 10;
     text-align: justify;
     margin: auto;
     font-family: $fuenteparrafos;
@@ -372,7 +382,7 @@ footer{
     transition-duration: 0.2s;
 }
 .sec-prod article {
-    width: 330px;
+    width: $ancho3*3;
     height: auto;
     margin: 5px;
     border-radius: 20px;
