@@ -12,7 +12,9 @@
   margin: 0px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+        
 }
+
 
 .header-index {
   width: 100%;
@@ -187,8 +189,8 @@ nav {
   text-shadow: -2px -2px 1px #000000;
   -webkit-animation-name: aparecer;
           animation-name: aparecer;
-  -webkit-animation: wobble;
-          animation: wobble;
+  -webkit-animation:fadeIn;
+          animation:fadeIn;
   -webkit-animation-duration: 5s;
           animation-duration: 5s;
   -webkit-animation-iteration-count: 3;
@@ -238,6 +240,7 @@ nav {
   text-transform: capitalize;
   padding: 10px;
   margin-bottom: 40px;
+  margin-top: 40px;
   color: #daa520;
   font-family: "Mochiy Pop P One", sans-serif;
 }
@@ -262,6 +265,7 @@ nav {
   background-color: #474747;
   border-radius: 20px;
   opacity: 0.5;
+  height: 320px;
 }
 
 .card:hover {
@@ -456,7 +460,7 @@ p a {
 .ses-historia article p {
   font-size: 16px;
   color: #acaba9;
-  width: 90%;
+  width: 80%;
   text-align: justify;
   margin: auto;
   font-family: "Montserrat Alternates", sans-serif;
@@ -477,7 +481,9 @@ p a {
   text-shadow: -2px -2px 1px #000000;
 }
 
-.sec-prod {
+.sec-prod,
+.sec-prod-2,
+.sec-prod-3 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -557,34 +563,87 @@ p a {
   text-align: center;
 }
 
-.sec-prod article img {
+.sec-prod article img,
+.sec-prod-2 article img,
+.sec-prod-3 article img {
   width: 100%;
   margin: auto;
   border-radius: 20px 20px 0px 0px;
   border: 2px solid #daa520;
 }
 
-.sec-prod h3 {
+.sec-prod h3,
+.sec-prod-2 h3,
+.sec-prod-3 h3 {
   color: #daa520;
   text-align: center;
   font-size: 20px;
   padding-bottom: 10px;
+  padding-top: 10px;
   font-family: "Mochiy Pop P One", sans-serif;
 }
 
-.sec-prod p {
+.sec-prod p{
   color: #acaba9;
-  font-size: 16px;
+  font-size: 18px;
   font-family: "Montserrat Alternates", sans-serif;
-  padding: 20px;
+  padding: 0px 20px;
   text-align: justify;
 }
+.sec-prod-2 p,
+.sec-prod-3 p {
+  color: #acaba9;
+  font-size: 20px;
+  font-family: "Montserrat Alternates", sans-serif;
+  padding: 0px 20px;
+  text-align:center;
+}
 
+.sec-prod-2 ul,
+.sec-prod-3 ul{
+  list-style: none;
+  color: #acaba9;
+  text-transform: uppercase;
+}
 .link {
   text-decoration: none;
 }
 
+/* colitas y bebidas cubanas */
+
+
+.sec-prod-2 article,
+.sec-prod-3 article{
+
+    width: 300px;
+    height: auto;
+    margin: 30px;
+    border-radius: 20px;
+    background-color: #000000;
+    margin-left: 40px;
+    margin-bottom: 40px;
+    -webkit-box-shadow: -1px 1px 15px 2px #525251;
+            box-shadow: -1px 1px 15px 2px #525251;
+    text-align: center;
+}
+
+.p-colita, 
+.p-bebidas{
+  margin: auto;
+  text-align: justify;
+  font-size: 18px;
+  color: #acaba9;
+  font-family: "Montserrat Alternates", sans-serif;
+  width: 80%;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+/* fin colitas y bebidas cubanas */
+
+
 /* aca inicia la sesion de Servicios */
+
 .carousel-item {
   width: 100%;
   text-align: center;
@@ -592,11 +651,17 @@ p a {
 
 .carousel-item img {
   width: 100%;
-  height: auto;
-  opacity: 0.5;
+  height: 600px;
+  opacity: 0.4;
   -webkit-transition: all 3s;
   transition: all 3s;
+ 
 }
+
+.carousel-control-next:hover, 
+.carousel-control-prev:hover{
+   background:none;
+ }
 
 a:-webkit-any-link {
   text-decoration: none;
@@ -672,15 +737,15 @@ main {
 #articulo-3 p,
 #articulo-4 p {
   color: #acaba9;
-  padding: 0px 20px 20px;
+  padding: 0px 30px ;
   font-size: 16px;
   font-family: "Montserrat Alternates", sans-serif;
   text-align: justify;
 }
 
-#articulo-1 p,
-#articulo-2 p,
-#articulo-3 p,
+#articulo-1 p:hover,
+#articulo-2 p:hover,
+#articulo-3 p:hover,
 #articulo-4 p:hover {
   color: #ffffff;
   opacity: 0.9;
@@ -743,7 +808,7 @@ main {
   border-radius: 20px;
   -webkit-box-shadow: -1px 1px 15px 2px #00fff2;
           box-shadow: -1px 1px 15px 2px #00fff2;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
 }
 
 #articulo-4 {
@@ -1013,7 +1078,7 @@ button:hover {
     font-family: "Mochiy Pop P One", sans-serif;
     color: #daa520;
     text-align: center;
-    padding: 40px 0px;
+    padding: 20px 0px;
   }
   .container-info h3 {
     font-size: 30px;
@@ -1049,6 +1114,8 @@ button:hover {
     margin: auto;
   }
   #articulo-1 p,
+  #articulo-2 p,
+  #articulo-4 p, 
   #articulo-3 p {
     display: none;
   }
@@ -1065,16 +1132,21 @@ button:hover {
     font-size: 12px;
     margin: auto;
   }
-  #articulo-2 p,
-  #articulo-4 p {
-    display: none;
-  }
+ 
+
   #articulo-2 img,
   #articulo-4 img {
     margin-bottom: 20px;
     margin: auto;
     margin-bottom: 20px;
     width: 80%;
+  }
+  .p-colita{
+    margin: auto;
+   
+  }
+  .carousel-item img {
+    height: 220px;
   }
 }
 

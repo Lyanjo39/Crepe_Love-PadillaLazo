@@ -49,7 +49,7 @@
               <li><a href="Historia.html" >HISTORIA</a></li>
               <li><a href="productos.html">PRODUCTOS</a></li>
               <li><a href="Servicios.html" class="active">SERVICIOS</a></li>
-              <li><a href="Contacto.html">CONTACTOS</a></li>
+              <li><a href="Contacto.html">CONTACTO</a></li>
             </ul>
           </nav>           
      </header>
@@ -66,37 +66,38 @@
   <!-- aca termina la barra de navegacion  -->
 
     <!-- CARRUSEL INICIO -->
- <div id="demo" class="carousel slide" data-ride="carousel">
 
-  <!-- Indicators -->
-  <ul class="carousel-indicators">
-    <li data-target="#demo" data-slide-to="0" class="active"></li>
-    <li data-target="#demo" data-slide-to="1"></li>
-    <li data-target="#demo" data-slide-to="2"></li>
-  </ul>
+<!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
 
-  <!-- The slideshow -->
+  <!-- Indicators/dots -->
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+    <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+  </div>
+
+  <!-- The slideshow/carousel -->
   <div class="carousel-inner">
     <div class="carousel-item active">
-      <img src="imagenes/crepeslider1.jpg">
+      <img src="imagenes/crepeslider2.jpg" class="d-block w-100">
     </div>
     <div class="carousel-item">
-      <img src="imagenes/crepeslider2.jpg" >
+      <img src="imagenes/crepeslider1.jpg"  class="d-block w-100">
     </div>
     <div class="carousel-item">
-      <img src="imagenes/crepeslider3.jpg" >
+      <img src="imagenes/crepeslider3.jpg" class="d-block w-100">
     </div>
   </div>
 
-  <!-- Left and right controls -->
-  <a class="carousel-control-prev" href="#demo" data-slide="prev">
+  <!-- Left and right controls/icons -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
     <span class="carousel-control-prev-icon"></span>
-  </a>
-  <a class="carousel-control-next" href="#demo" data-slide="next">
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
     <span class="carousel-control-next-icon"></span>
-  </a>
-
- </div>
+  </button>
+</div>
 
 <!-- CARRUSEL FINAL -->
     <main>
@@ -108,14 +109,14 @@
                <a href="#" class="link">
                 <h3>CAFETERÍA</h3>
                  <img src="imagenes/cafeteria.jpg" alt="cafeteria-de-Crepes"> 
-                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores illum quo, beatae vel inventore dicta, laudantium officia excepturi dignissimos, dolor quisquam odio? </p>
+                  <p> Perfecta para desayunar y pasar la mañana compartiendo con tu pareja, amigos o con quien quieras!. Nuestros pasabocas son simplemente espectaculares. Ven y compruebalo </p>
                </a>       
           </article>
         
           <article id="articulo-2">
               <a href="#" class="link">    
               <h3>BAR</h3>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores illum quo, beatae vel inventore dicta, laudantium officia excepturi dignissimos, dolor quisquam odio? </p> 
+                <p> Y seguimos pensando en todos. Este es el espacio indicado para relajarte despues de una ardua jornada laboral, especial para aquellos que quieren escaparse de la monotonia del dia a dia.  </p> 
                 <img src="imagenes/bar.jpg"  alt="Bar-de-Crepes" id="foto-logo"> 
             </a>             
                
@@ -125,14 +126,14 @@
             <a href="#" class="link">
                 <h3>RESTAURANTE</h3>
                 <img src="imagenes/restaurante.jpg" alt="restaurante-de-Crepes">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores illum quo, beatae vel inventore dicta, laudantium officia excepturi dignissimos, dolor quisquam odio?</p>
+                <p>¿Algo más formal? Pues tambien lo tenemos, ven y vive tus veladas mas romanticas, disfruta de nuestra deliciosa variedad de platos. Solo tienes que venir!</p>
               </a>  
           </article>
               
           <article id="articulo-4">
             <a href="#" class="link">
                 <h3>DOMICILIOS</h3>
-              <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores illum quo, beatae vel inventore dicta, laudantium officia excepturi dignissimos, dolor quisquam odio?</p>
+              <p>Si lo que deseas es tener nuestros productos y disfrutarlos en tu hogar, pues ¿qué creps? Tambien tenemos nuestra linea de domicilios, solo contactanos y haremos el resto</p>
                <img src="imagenes/domicilios.jpg" alt="cafeteria-de-Crepes">  
             </a>  
              
@@ -141,72 +142,73 @@
     </main>   
       
   
-      <footer> 
-        <div class="footer-bottom-area bg-dark-light section-padding-sm">
-        <div class="container">
-          <div class="row widgets footer-widgets">
-            
-            <div class="col-lg-3 col-md-6 col-12">
-               <div class="single-widget widget-about">
-                  <h5 class="widget-title">Conocenos</h5>
-                    <img src="">
-                     <p>Somos Crepe Love, la tienda de crepes mas grande de la ciudad de Santa Marta, nuestros sabores nos destacan por delante del resto <a href="#">Leer más...</a>
-                     </p>
-              </div>
-            </div>
-          
-              <div class="col-lg-3 col-md-6 col-12">
-                  <div class="single-widget widget-quick-links">
-                      <h5 class="widget-title">Mi cuenta</h5>
-                      <ul>
-                          <li><a href="#">Mapa del sitio</a></li>
-                          <li><a href="#">Politicas de privacidad</a></li>
-                          <li><a href="#">Mi cuenta</a></li>
-                          <li><a href="#">Búsqueda Avanzada</a></li>                        
-                      </ul>
-                  </div>
-              </div>
-          
-              <div class="col-lg-3 col-md-6 col-12">
-                  <div class="single-widget widget-quick-links">
-                      <h5 class="widget-title">Servicio al Cliente</h5>
-                      <ul>
-                          <li><a href="#">Politica de envios</a></li>
-                          <li><a href="#">Primera compensasion</a></li>
-                          <li><a href="#">PQR</a></li>
-                          <li><a href="#">Política de devoluciones</a></li>                       
-                      </ul>
-                  </div>
-              </div>
-          
-                <div class="col-lg-3 col-md-6 col-12">
-                    <div class="single-widget widget-contact">
-                        <h5 class="widget-title">Contactanos</h5>
-                        <ul>
-                            <li class="address">
-                                <span class="icon"><i class="fa fa-map-marker"></i></span>
-                                <p>Dirección : Santa Marta- Magdalena, Colombia. Libano 2000 mz 7 cs 10</p>
-                            </li>
-                            <li class="phone">
-                                <span class="icon"><i class="fa fa-phone"></i></span>
-                                <p><a href="contacto.html">+57 3014567890</a></p>
-                            </li>
-                            <li class="fax">
-                                <span class="icon"><i class="fa fa-fax"></i></span>
-                                <p><a href="contacto.html">+57 3014567890</a></p>
-                            </li>
-                            <li class="email">
-                                <span class="icon"><i class="fa fa-envelope-o"></i></span>
-                                <p><a href="contacto.html">crepelove.sta-mta@gmail.com</a></p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-
-            </div>
+    <footer> 
+      <div class="footer-bottom-area bg-dark-light section-padding-sm">
+      <div class="container">
+      <div class="row widgets footer-widgets">
+                
+      <div class="col-lg-3 col-md-6 col-12">
+      <div class="single-widget widget-about">
+        <h5 class="widget-title">Conocenos</h5>
+          <img src="">
+            <p>Somos Crepe Love, la tienda de crepes mas grande de la ciudad de Santa Marta, nuestros sabores nos destacan por delante del resto <a href="Historia.html">Leer más...</a>
+            </p>
+      </div>
+      </div>
+              
+      <div class="col-lg-3 col-md-6 col-12">
+      <div class="single-widget widget-quick-links">
+        <h5 class="widget-title">Mapa del sitio</h5>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+              <li><a href="Historia.html">Historia</a></li>
+              <li><a href="productos.html">Productos</a></li>
+              <li><a href="Servicios.html">Servicios</a></li>                        
+              <li><a href="Contacto.html">Contacto</a></li>                        
+          </ul>
+      </div>
+      </div>
+              
+      <div class="col-lg-3 col-md-6 col-12">
+        <div class="single-widget widget-quick-links">
+        <h5 class="widget-title">Servicio al Cliente</h5>
+          <ul>
+            <li><a>Politica de envios</a></li>
+              <li><a>Primera compensasion</a></li>
+              <li><a>PQR</a></li>
+              <li><a>Política de devoluciones</a></li>                       
+          </ul>
         </div>
-    </div>
-      </footer>
+      </div>
+              
+      <div class="col-lg-3 col-md-6 col-12">
+      <div class="single-widget widget-contact">
+        <h5 class="widget-title">Contactanos</h5>
+           <ul>
+             <li class="address">
+              <span class="icon"><i class="fa fa-map-marker"></i></span>
+                <p>Dirección : Santa Marta- Magdalena, Colombia. Libano 2000 mz 7 cs 10</p>
+              </li>
+              <li class="phone">
+              <span class="icon"><i class="fa fa-phone"></i></span>
+              <p><a href="contacto.html">+57 3014567890</a></p>
+              </li>
+               <li class="fax">
+               <span class="icon"><i class="fa fa-fax"></i></span>
+                <p><a href="contacto.html">+57 3014567890</a></p>
+                </li>
+                <li class="email">
+                <span class="icon"><i class="fa fa-envelope-o"></i></span>
+                <p><a href="contacto.html">crepelove.sta-mta@gmail.com</a></p>
+                </li>
+                </ul>
+                </div>
+      </div>
+    
+      </div>
+      </div>
+      </div>
+    </footer>
             
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>   
